@@ -1,0 +1,996 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(/img/BACKGROUND.png) no-repeat center / cover scroll;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 22, 22, 1) 44%,
+    rgba(22, 22, 22, 1) 78%
+  );
+}
+
+.container {
+  max-width: 1660px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+
+.navbar {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.nav h1 {
+  font-size: 36px;
+  flex-wrap: wrap;
+  color: rgb(252, 157, 33);
+  font-family: "Montserrat", serif;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.m-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.m-heading a {
+  font-size: 28px;
+  padding: 10px;
+  text-decoration: none;
+  color: #d1d1d2;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+}
+.bt button {
+  height: 45px;
+  width: 150px;
+  background-color: rgb(240, 217, 14);
+  color: white;
+  border-radius: 20px;
+  font-size: 23px;
+  font-family: "Montserrat";
+  border: none;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.food-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  /* flex-wrap: wrap; */
+}
+/* .tasty {
+  width: 50%;
+  height: 50%;
+} */
+.food-plat {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.food-plat img {
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+}
+
+.tasty button {
+  padding: 15px 100px;
+  border-radius: 50px;
+  font-family: "Montserrat", serif;
+  font-size: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 22, 22, 1) 35%,
+    rgba(68, 66, 66, 1) 100%
+  );
+  border-color: rgb(245, 193, 24);
+  color: white;
+  cursor: pointer;
+}
+.tasty h1 {
+  padding-top: 30px;
+  font-size: 68px;
+  color: white;
+  font-family: "Montserrat", serif;
+}
+
+.tasty p {
+  padding-top: 20px;
+  font-size: 22px;
+  font-family: "Poppins", serif;
+  color: white;
+}
+span {
+  color: #ff9900;
+}
+#bt {
+  margin-top: 40px;
+  height: 80px;
+  /* width: 555px; */
+  border-radius: 20px;
+  font-size: 30px;
+  padding-left: 20px;
+}
+.d-bt button {
+  position: relative;
+  padding: 10px 100px;
+  border-radius: 20px;
+  bottom: 119px;
+  left: 370px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 153, 0, 1) 35%,
+    rgba(255, 47, 49, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.main-heading h1 {
+  font-size: 96px;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.main-heading p {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.all-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-img {
+  max-width: 100%;
+}
+.card1 {
+  justify-content: center;
+  text-align: center;
+}
+.card2 {
+  justify-content: center;
+  text-align: center;
+}
+.card2 p {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+.card2 h6 {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.card3 {
+  justify-content: center;
+  text-align: center;
+}
+.card3 p {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+.card3 h6 {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.card1 img {
+  max-width: 100%;
+  padding-top: 47px;
+}
+.card1 p {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  padding-top: 53px;
+}
+.card1 h6 {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.card2 img {
+  max-width: 100%;
+}
+.card3 img {
+  max-width: 100%;
+}
+
+.main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.second-img {
+  display: flex;
+  height: 50%;
+  width: 50%;
+}
+.second-img img {
+  max-width: 100%;
+}
+
+.headd-h1 h1 {
+  color: white;
+  font-size: 96px;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  margin-bottom: 30px;
+}
+
+.pahraa-p p {
+  font-family: "Poppins", serif;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 30px;
+}
+.more-btn button {
+  max-width: 100%;
+  padding: 10px 110px;
+  background-color: #ff9900;
+  border-radius: 20px;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.image-chily img {
+  position: relative;
+  left: 300px;
+  max-width: 100%;
+}
+
+.small-card {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  align-items: center;
+}
+
+.s-card1 {
+  height: 100%;
+  flex-wrap: wrap;
+}
+.s-card1 img {
+  height: 325px;
+}
+
+.s-card1 h1 {
+  padding-top: 40px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  margin-bottom: 25px;
+}
+.s-card1 p {
+  font-family: "Poppins", serif;
+  color: white;
+  font-size: 23px;
+  justify-content: center;
+  text-align: center;
+}
+.resipe {
+  padding-top: 100px;
+}
+.resipe h1 {
+  padding-top: 50px;
+  justify-content: center;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.resipe p {
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  color: white;
+}
+.meet-plat {
+  display: flex;
+}
+
+.plat-new h4 {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  margin-bottom: 30px;
+}
+.plat-new p {
+  color: white;
+  font-size: 28px;
+  font-family: "Poppins", serif;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.meet-plat img {
+  max-width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.plat-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plat-new button {
+  padding: 15px 100px;
+  border-radius: 50px;
+  background-color: #ff9900;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 34px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.table-sit {
+  display: flex;
+  justify-content: space-between;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.table-img img {
+  max-width: 100%;
+  overflow: hidden;
+}
+.table {
+  padding-left: 90px;
+}
+.table h1 {
+  color: white;
+  font-size: 96px;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  margin-bottom: 30px;
+}
+.table p {
+  color: white;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+input {
+  height: 102px;
+  width: 685px;
+  border-radius: 40px;
+  font-size: 34px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  border-color: #ff9900;
+  background-color: transparent;
+}
+
+.m-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 1280px) {
+  /* .navbar {
+    justify-content: center;
+  } */
+  .main-heading p {
+    font-size: 26px;
+  }
+  .heading-main2 {
+    text-align: center;
+  }
+  .food-one {
+    flex-wrap: wrap;
+  }
+  .all-card {
+    flex-wrap: wrap;
+  }
+  .card1 p {
+    font-size: 70px;
+    padding: 0;
+  }
+  .card1 h6 {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .card2 p {
+    font-size: 70px;
+    padding: 0;
+  }
+  .card2 h6 {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .card3 p {
+    font-size: 70px;
+    padding: 0;
+  }
+  .card3 h6 {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .headd-h1 h1 {
+    font-size: 120px;
+  }
+  .pahraa-p p {
+    font-size: 45px;
+  }
+  .more-btn button {
+    padding: 13px 202px;
+    max-width: 100%;
+  }
+  .resipe p {
+    font-size: 28px;
+  }
+  .plat-cover {
+    flex-wrap: wrap;
+  }
+  .table-sit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .small-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .plat-new {
+    text-align: center;
+  }
+  .plat-new h4 {
+    font-size: 27px;
+  }
+  .plat-new button {
+    padding: 10px 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .food-one {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .m-heading a {
+    font-size: 24px;
+  }
+  .m-heading {
+    gap: 30px;
+    order: 2;
+  }
+  .navbar {
+    justify-content: space-around;
+    padding: 10px;
+    gap: 30px;
+  }
+  .nav h1 {
+    font-size: 50px;
+  }
+  .bt button {
+    height: 32px;
+    width: 148px;
+  }
+  .s-card1 h1 {
+    padding-top: 0;
+  }
+  .tasty {
+    padding-top: 25px;
+  }
+  .tasty h1 {
+    font-size: 62px;
+    font-weight: 500;
+  }
+  .tasty p {
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: 300;
+  }
+  .tasty button {
+    max-width: 100%;
+    font-size: 25px;
+  }
+  input {
+    width: 100%;
+  }
+
+  .d-bt button {
+    position: relative;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+  }
+  .food-plat img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .main-heading {
+    padding-top: 0;
+  }
+  .main-heading h1 {
+    padding-top: 0;
+    font-size: 70px;
+    text-align: center;
+  }
+  .main-heading p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .all-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .heading-main2 button {
+    height: 50%;
+    width: 50%;
+  }
+  .heading-main2 {
+    text-align: center;
+  }
+  .heading-main2 h1 {
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .heading-main2 p {
+    font-size: 30px;
+  }
+  .red-chil img {
+    position: relative;
+    left: 0;
+    top: 20px;
+  }
+  .second-img img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .s-card1 img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .plat-cover {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .table-sit {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .table {
+    padding-left: 0;
+    text-align: center;
+  }
+  .table-img img {
+    max-width: 100%;
+  }
+  .small-card {
+    justify-content: center;
+    padding-top: 1px;
+    flex-wrap: wrap;
+  }
+  .resipe p {
+    font-size: 27px;
+  }
+  .plat-heading {
+    padding-top: 0;
+  }
+  .plat-heading h4 {
+    font-size: 35px;
+  }
+  .plat-heading p {
+    font-size: 32px;
+  }
+  .plat-heading button {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    height: 70px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .tasty button {
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .tasty h1 {
+    font-size: 48px;
+  }
+  .tasty p {
+    font-size: 15px;
+  }
+  #bt {
+    height: 58px;
+  }
+  .bt button {
+    height: 40px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .m-heading {
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 19 px;
+  }
+
+  .m-heading a {
+    font-size: 15px;
+  }
+  .food-plat img {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+  .navbar {
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    gap: 0;
+  }
+  .nav h1 {
+    font-size: 30px;
+  }
+  .bt button {
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .d-bt button {
+    position: relative;
+    left: 4px;
+    top: -40px;
+  }
+  .table-img img {
+    max-width: 100%;
+  }
+  .tasty button {
+    font-size: 16px;
+  }
+  .tasty h1 {
+    padding-top: 10px;
+    font-size: 29px;
+    font-weight: 400;
+  }
+  .tasty p {
+    font-size: 9px;
+    font-weight: 300;
+  }
+  .table-sit {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #bt {
+    height: 50px;
+    width: 250px;
+    font-size: 24px;
+  }
+  .table {
+    padding-left: 2px;
+  }
+  .table h1 {
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .table p {
+    font-size: 21px;
+    font-weight: 400;
+  }
+  .main2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-card {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .second-img {
+    height: 100%;
+    width: 100%;
+  }
+  .second-img img {
+    max-width: 100%;
+  }
+  .red-chil img {
+    left: 5px;
+    top: 20px;
+  }
+  .all-card {
+    flex-wrap: wrap;
+  }
+  .food-one {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+  }
+  .plat-cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .meet-plat img {
+    height: 100%;
+    width: 100%;
+  }
+  /* .heading-main2 button {
+    height: 50px;
+    width: 250px;
+  } */
+  .main-heading h1 {
+    font-size: 30px;
+  }
+  .main-heading {
+    padding-top: 0px;
+  }
+  .main-heading p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .card1 p {
+    padding: 0;
+  }
+  .card1 img {
+    max-width: 100%;
+  }
+  /* .card1 img {
+    padding-top: 0px;
+    height: 400px;
+  } */
+  .card2 img {
+    max-width: 100%;
+  }
+  .card2 p {
+    font-size: 35px;
+  }
+  .card3 img {
+    max-width: 100%;
+  }
+  .card3 p {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .card1 p {
+    font-size: 40px;
+    padding: 0;
+}
+.card1 h6 {
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.card2 h6 {
+  font-size: 45px;
+}
+.heading-main2 button {
+  height: 50%;
+  width: 50%;
+  padding: 10px 10px;
+}
+  .card3 h6 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+  .heading-main2 {
+    padding-top: 20px;
+  }
+  .heading-main2 h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .heading-main2 p {
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  input {
+    height: 100%;
+    width: 100%;
+  }
+  .plat-heading h4 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .plat-heading {
+    text-align: center;
+    padding-top: 0;
+  }
+  .plat-heading p {
+    font-size: 21px;
+    font-weight: 300;
+  }
+  .resipe h1 {
+    font-size: 32px;
+  }
+  .resipe p {
+    font-size: 15px;
+  }
+  .s-card1 h1 {
+    padding-top: 0;
+    font-size: 30px;
+  }
+  .small-card {
+    padding-top: 0;
+    overflow: hidden;
+  }
+  .plat-heading button {
+    max-width: 100%;
+    font-size: 29px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+  }
+
+  .s-card1 p {
+    font-size: 17px;
+  }
+  .resipe {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .m-heading a {
+    font-size: 10px;
+    padding: 0;
+  }
+  .nav h1 {
+    font-size: 20px;
+  }
+  .tasty button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .d-bt {
+    padding: 0px 34px;
+  }
+  .tasty p {
+    font-size: 8px;
+    font-weight: 300;
+  }
+  .tasty h1 {
+    font-size: 18px;
+  }
+
+  #bt {
+    padding: 0px 18px;
+  }
+  .bt button {
+    margin: 12px;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .main-heading h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .main-heading p {
+    font-size: 9px;
+    font-weight: 3;
+  }
+  .card1 p {
+    font-size: 24px;
+  }
+  .card1 h6 {
+    font-size: 24px;
+  }
+  .card2 p {
+    font-size: 22px;
+  }
+  .card2 h6 {
+    font-size: 24px;
+  }
+  .card3 p {
+    font-size: 24px;
+  }
+  .card3 h6 {
+    font-size: 24px;
+  }
+  .heading-main2 h1 {
+    font-size: 30px;
+  }
+  .heading-main2 p {
+    font-size: 12px;
+  }
+  .heading-main2 button {
+    padding: 0px 10px;
+    font-size: 23px;
+  }
+  .plat-heading button {
+    font-size: 24px;
+  }
+  .plat-heading p {
+    font-size: 15px;
+  }
+  .plat-heading h4 {
+    font-size: 18px;
+  }
+  .plat-heading button {
+    padding: 10px 10px;
+    height: 50%;
+} 
+.table h1 {
+  font-size: 50px;
+}
+.table p {
+  font-size: 18px
+}
+}
