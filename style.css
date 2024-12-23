@@ -914,6 +914,25 @@ input {
   .m-heading a {
     font-size: 10px;
 }
+.heading-main2 p {
+  font-size: 16px;
+}
+.heading-main2 h1 {
+  font-size: 43px;
+}
+.resipe p {
+  font-size: 13px;
+}
+.resipe h1 {
+  font-size: 31px;
+  padding-top: 0;
+}
+.table h1 {
+  font-size: 50px;
+}
+.table p {
+  font-size: 18px;
+}
 .card1 p {
   font-size: 26px;
 }
