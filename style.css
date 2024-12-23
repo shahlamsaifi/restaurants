@@ -930,6 +930,12 @@ input {
 .table h1 {
   font-size: 50px;
 }
+.main-heading h1 {
+  font-size: 26px;
+}
+.main-heading p {
+  font-size: 10px;
+}
 .table p {
   font-size: 18px;
 }
