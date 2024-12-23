@@ -53,16 +53,16 @@ body {
   font-family: "Montserrat", serif;
 }
 .bt button {
-  height: 45px;
-  width: 150px;
   background-color: rgb(240, 217, 14);
   color: white;
+  padding: 10px 40px;
   border-radius: 20px;
-  font-size: 23px;
+  font-size: 28px;
   font-family: "Montserrat";
   border: none;
   flex-wrap: wrap;
   cursor: pointer;
+  max-width: 100%;
 }
 
 .food-one {
@@ -83,8 +83,8 @@ body {
   justify-content: center;
 }
 .food-plat img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   /* display: flex; */
 }
 
@@ -139,7 +139,9 @@ span {
   );
   cursor: pointer;
 }
-
+.heading-main2 {
+  text-align: center;
+}
 .main-heading h1 {
   font-size: 96px;
   font-family: "Montserrat", serif;
@@ -203,7 +205,7 @@ span {
 }
 .card1 img {
   max-width: 100%;
-  padding-top: 47px;
+  padding-top: 28px;
 }
 .card1 p {
   font-family: "Poppins", serif;
@@ -276,6 +278,7 @@ span {
   justify-content: center;
   padding-top: 90px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .s-card1 {
@@ -412,10 +415,16 @@ input {
   gap: 20px;
 }
 
+@media (max-width: 1345px) {
+  .plat-new h4 {
+    font-size: 34px;
+}
+.plat-new p {
+  font-size: 22px;
+}
+}
+
 @media (max-width: 1280px) {
-  /* .navbar {
-    justify-content: center;
-  } */
   .main-heading p {
     font-size: 26px;
   }
@@ -515,8 +524,8 @@ input {
     font-size: 50px;
   }
   .bt button {
-    height: 32px;
-    width: 148px;
+    max-width: 100%
+    ;
   }
   .s-card1 h1 {
     padding-top: 0;
@@ -548,8 +557,7 @@ input {
     width: 100%;
   }
   .food-plat img {
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
   }
   .main-heading {
@@ -667,6 +675,14 @@ input {
     width: 150px;
   }
 }
+@media (max-width: 768px) {
+  .m-heading a {
+      font-size: 20px;
+  }
+  .bt button {
+    font-size: 17px;
+}
+}
 
 @media (max-width: 480px) {
   .m-heading {
@@ -677,15 +693,14 @@ input {
   }
 
   .m-heading a {
-    font-size: 15px;
+    font-size: 14px;
   }
-  .food-plat img {
-    height: 100%;
+  /* .food-plat img {
     overflow: hidden;
-    width: 100%;
-  }
+    max-width: 100%;
+  } */
   .navbar {
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     align-items: center;
     display: flex;
@@ -693,12 +708,11 @@ input {
     gap: 0;
   }
   .nav h1 {
-    font-size: 30px;
+    font-size: 18px;
   }
   .bt button {
     margin: 10px;
-    height: 100%;
-    width: 100%;
+  font-size: 17px;
   }
 
   .d-bt button {
@@ -785,13 +799,8 @@ input {
     align-items: center;
   }
   .meet-plat img {
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
   }
-  /* .heading-main2 button {
-    height: 50px;
-    width: 250px;
-  } */
   .main-heading h1 {
     font-size: 30px;
   }
@@ -808,10 +817,6 @@ input {
   .card1 img {
     max-width: 100%;
   }
-  /* .card1 img {
-    padding-top: 0px;
-    height: 400px;
-  } */
   .card2 img {
     max-width: 100%;
   }
@@ -828,23 +833,23 @@ input {
   .card1 p {
     font-size: 40px;
     padding: 0;
-}
-.card1 h6 {
-  font-size: 45px;
-  margin-bottom: 0;
-}
-.card2 h6 {
-  font-size: 45px;
-}
-.heading-main2 button {
-  height: 50%;
-  width: 50%;
-  padding: 10px 10px;
-}
+  }
+  .card1 h6 {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+  .card2 h6 {
+    font-size: 45px;
+  }
+  .heading-main2 button {
+    height: 50%;
+    width: 50%;
+    padding: 10px 10px;
+  }
   .card3 h6 {
     font-size: 40px;
     margin-bottom: 10px;
-}
+  }
   .heading-main2 {
     padding-top: 20px;
   }
@@ -907,7 +912,7 @@ input {
 
 @media (max-width: 360px) {
   .m-heading a {
-    font-size: 10px;
+    font-size: 13px;
     padding: 0;
   }
   .nav h1 {
@@ -918,7 +923,7 @@ input {
     font-size: 13px;
   }
   .d-bt {
-    padding: 0px 34px;
+    padding: 0px 20px;
   }
   .tasty p {
     font-size: 8px;
@@ -933,10 +938,8 @@ input {
   }
   .bt button {
     margin: 12px;
-    height: 100%;
-    width: 100%;
-    font-size: 18px;
-  }
+    font-size: 17px;
+}
 
   .main-heading h1 {
     font-size: 24px;
@@ -944,7 +947,7 @@ input {
   }
   .main-heading p {
     font-size: 9px;
-    font-weight: 3;
+    font-weight: 300;
   }
   .card1 p {
     font-size: 24px;
@@ -984,13 +987,19 @@ input {
     font-size: 18px;
   }
   .plat-heading button {
-    padding: 10px 10px;
-    height: 50%;
-} 
-.table h1 {
-  font-size: 50px;
+    padding: 5px 10px;
+    height: 50px;
+    max-width: 100%;
 }
-.table p {
-  font-size: 18px
-}
+  .table h1 {
+    font-size: 50px;
+  }
+  .table p {
+    font-size: 18px;
+  }
+  .food-plat img {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: block;
+  }
 }
