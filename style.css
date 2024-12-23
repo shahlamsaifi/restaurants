@@ -910,6 +910,48 @@ input {
   }
 }
 
+@media (max-width: 424px) {
+  .m-heading a {
+    font-size: 12px;
+}
+.card1 p {
+  font-size: 26px;
+}
+.card1 h6 {
+  font-size: 26px;
+}
+.card2 p {
+  font-size: 26px;
+}
+.card2 h6 {
+  font-size: 26px;
+}
+.card3 p {
+  font-size: 26px;
+}
+.card3 h6 {
+  font-size: 26px;
+}
+.plat-heading h4 {
+  font-size: 19px;
+}
+.plat-heading p {
+  font-size: 17px;
+}
+.plat-heading button {
+  max-width: 50%;
+  max-width: 50%;
+  font-size: 20px;
+}
+.heading-main2 button {
+  padding: 0px 10px;
+}
+.tasty button {
+  font-size: 16px;
+  padding: 5px 26px;
+}
+}
+
 @media (max-width: 360px) {
   .m-heading a {
     font-size: 13px;
